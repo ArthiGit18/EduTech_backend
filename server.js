@@ -13,6 +13,7 @@ console.log(image);
 
 app.use(cors({
     origin: 'http://localhost:3000',
+    origin: 'https://edutech-backend-znpm.onrender.com',
     credentials: true
 }));
 app.use(express.json());
