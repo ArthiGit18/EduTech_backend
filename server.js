@@ -12,10 +12,10 @@ const image = "./images/eduTechB.png"
 console.log(image);
 
 app.use(cors({
-    origin: 'http://localhost:3000',
-    origin: 'https://edutech-backend-znpm.onrender.com',
+    origin: ['http://localhost:3000', 'https://edutech-blog.netlify.app'], // or your domain
     credentials: true
 }));
+
 app.use(express.json());
 
 // ✅ Contact Form Route
