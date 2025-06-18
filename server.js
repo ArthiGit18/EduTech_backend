@@ -12,7 +12,11 @@ const image = "./images/eduTechB.png"
 console.log(image);
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://edutech-blog.netlify.app'], // or your domain
+    origin: [
+        'http://localhost:3000',
+        'https://edutech-blog.netlify.app',
+        'https://edutechlearners.netlify.app' // ✅ Add this
+    ],
     credentials: true
 }));
 
