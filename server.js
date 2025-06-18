@@ -35,6 +35,7 @@ app.post('/api/contact', async (req, res) => {
     const ownerMailOptions = {
         from: email,
         to: 'crimechronicles13@gmail.com',
+        replyTo: email,
         subject: 'New Contact Form Submission',
         html: `
             <h3>New message from your website</h3>
@@ -45,7 +46,7 @@ app.post('/api/contact', async (req, res) => {
     };
 
     const userMailOptions = {
-        from: 'crimechronicles13@gmail.com',
+        from: '"EDUTech Team" <crimechronicles13@gmail.com>',
         to: email,
         subject: 'Thank You for Contacting Us',
         html: `
